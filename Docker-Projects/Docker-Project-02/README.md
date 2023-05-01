@@ -1,6 +1,7 @@
-# Project-02 : Roman Numerals Converter Application (Python Flask) deployed on AWS EC2 with Cloudformation and AWS CLI
+# Project-02 : Roman Numerals Converter Application (Python Flask) deployed on AWS EC2 with Terraform
+
 ## Description
-The Roman Numerals Converter Application aims to convert the given number to the Roman numerals. The application is to be coded in Python and deployed as a web application with Flask on AWS Elastic Compute Cloud (EC2) Instance using AWS Cloudformation and CLI Services. 
+Roman Numerals Converter App aims to convert given number to Roman numerals. The application will be coded in Python and deployed as a web application with Flask on AWS Elastic Compute Cloud (EC2) Instance using Terraform. The application will be run on EC2 using Docker image.
 
 ## Problem Statement
 
@@ -57,11 +58,11 @@ Ten         Warning with "Not Valid! Please enter a number between 1 and 3999, i
    
 - As a DevOps, developer has given you app and template folder, you are requested to deploy your web environment using Python's Flask framework.
 
-- You are requested to push your program to the project repository on the Github and deploy your solution in the development environment on AWS EC2 Instance using AWS Cloudformation Service to showcase your project. In the development environment, you'll configure your Cloudformation template using the followings,
+- You are requested to push your program to the project repository on the Github and deploy your solution in the development environment on AWS EC2 Instance using Terraform to showcase your project. In the development environment, you'll configure your Terraform template using the followings,
 
    - The application stack should be created with new AWS resources. 
 
-   - The application stack should take the name of your Key Pair as a parameter from the user;
+   - Should take the name of your Key Pair and write it in The terraform tf file ;
    
    - The application should run on Amazon Linux 2 EC2 Instance
 
@@ -69,13 +70,13 @@ Ten         Warning with "Not Valid! Please enter a number between 1 and 3999, i
 
    - Latest AWS Linux AMI should be used for template.
 
-   - Instance launched by Cloudformation should be tagged `Web Server of StackName` 
+   - Instance launched by Terraform should be tagged `Docker` 
 
    - The Web Application should be accessible via web browser and terminal from anywhere.
 
-   - The Application files should be downloaded from Github repo and deployed on EC2 Instance using user data script within cloudformation template. 
+   - The Application files should be downloaded from Github repo and deployed on EC2 Instance using user data script within Terraform. 
 
-   - Roman Numerals Converter Application Website URL should be given as output by Cloudformation Service, after the stack created.
+   - Roman Numerals Converter Application Website URL should be given as output by Terraform, after the tf file is created.
 
 - Lastly, try to deploy same infrastructure using AWS CLI commands to showcase your project. 
 
@@ -110,9 +111,7 @@ Ten         Warning with "Not Valid! Please enter a number between 1 and 3999, i
 
 - AWS Security Groups Configuration
 
-- AWS Cloudformation Service
-
-- AWS Cloudformation Template Design
+- Terraform Tf File
 
 - AWS CLI Service
 
@@ -126,15 +125,13 @@ Ten         Warning with "Not Valid! Please enter a number between 1 and 3999, i
 
 - improve web programming skills using HTTP GET/POST methods, template formatting, importing packages within Python Flask Framework
 
-- improve bash scripting skills using `user data` section in Cloudformation to install and setup web application on EC2 Instance
+- improve bash scripting skills using `user data` section in Terraform to install and setup web application on EC2 Instance
 
 - configure AWS EC2 Instance and Security Groups.
 
-- configure Cloudformation template to use AWS Resources.
+- configure Terraform tf file to use AWS Resources.
 
-- use AWS Cloudformation Service to launch stacks.
-
-- use AWS Cli to launch same stacks.
+- use AWS Cli to launch same tf file.
 
 - use git commands (push, pull, commit, add etc.) and Github as Version Control System.
 
@@ -146,11 +143,11 @@ Ten         Warning with "Not Valid! Please enter a number between 1 and 3999, i
 
 - Step 3: Copy the Roman Numerals Converter Application in Python
 
-- Step 4: Prepare a cloudformation template to deploy your app on EC2 Instance
+- Step 4: Prepare a terraform tf file to deploy your app on EC2 Instance
 
 - Step 5: Push your application into your own public repo on Github
 
-- Step 6: Deploy your application on AWS Cloud using Cloudformation template to showcase your app within your team.
+- Step 6: Deploy your application on AWS Cloud using terraform tf file to showcase your app within your team.
 
 - Step 7: Deploy your application on AWS Cloud using AWS Cli to showcase your app within your team.
 
@@ -164,7 +161,7 @@ Ten         Warning with "Not Valid! Please enter a number between 1 and 3999, i
 
 - [Python Flask Example](https://realpython.com/flask-by-example-part-1-project-setup/)
 
-- [AWS Cloudformation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html)
+- [Terraform AWS Provider](https://registry.terraform.io/providers/hashicorp/aws/latest/docs)
 
 - [AWS Cli User Guide](https://docs.aws.amazon.com/cli/latest/)
 
