@@ -4,7 +4,7 @@ The Roman Numerals Converter Application aims to convert the given number to the
 
 ## Problem Statement
 
-![Project_001](Proje_01_1288X600.jpg)
+![Project_001](Docker-Project-02-1288.jpg)
 
 - Your company has recently started on a project that aims to be one of the most used unit converters and formulas website. Roman Numerals Converter is the part of the project. So you and your colleagues have started to work on the project.
 
